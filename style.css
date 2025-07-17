@@ -9,8 +9,15 @@ body {
 	padding: 0px 200px;	
 }
 
+#footer.content{
+	background-color: #1f2937;
+	padding: 40px;
+	text-align:center;
+	color:#f9faf8;
+}
+
 #blue.content{
-	padding: 10px 200px 40px 200px;
+	padding: 5px 200px 40px 200px;
 	background-color: #1f2937;
 }
 
@@ -23,11 +30,12 @@ body {
 .title-bar {
 	display: flex;
 	margin: 20px 0px;
+	align-items: flex-end;
 }
 
 .title-bar > .header-logo{
 	font-size: 24px;
-	font-weight:400;
+	font-weight: 600;
 	color:#f9faf8;
 }
 
@@ -79,11 +87,12 @@ h2{
 }
 
 div.info > div.img-box{
+	margin: 10px;
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	flex-direction: column;
-	flex: 0 1 0;
+	flex: 1;
 
 }
 
@@ -92,11 +101,12 @@ div.info > div > p{
 }
 
 div.info > div > img{
-	margin: 10px;
-	flex: 1 1 100%;
-	min-height: 0%;
+	aspect-ratio: 1/1;
+	flex: 1;
 	border:3px solid #3882f6;
 	border-radius: 7px;
+	max-width: 100%;
+	height: auto;
 }
 
 
@@ -113,9 +123,21 @@ div .quote-src{
 	text-align: end;
 }
 
-div.module3 {
-	background-color: #e5e7eb;
+div.content-wrapper {
+	display:flex;
+	margin: 50px 0px;
+	padding: 20px 70px;
+	border-radius: 10px;
+	background-color: #3882f6;
+	flex: 0 0 auto;
+	justify-content: space-between;
+	align-items: flex-end;
 }
+
+div.content-wrapper > .footer-text{
+	color:#e5e7eb;
+}
+
 
 br { margin: 10px; line-height:5px; }
 
@@ -123,8 +145,11 @@ button {
 	background-color:#3882f6;
 	border: 2px solid white;
 	border-radius: 5px;
-	padding: 5px 20px;
+	padding: 3px 20px;
 	color: white;
+	flex: 0;
+	width: 100px;
+	height: 35px;
 }
 
 
